@@ -1,5 +1,7 @@
 body {
   background-color: lightgray;
+  /*preventing the usage of the bottom left to right scroll wheel*/
+  overflow-x: hidden;
 }
 h1 {
   color: grey;
@@ -56,6 +58,7 @@ nav a {
     float: right;
   }
 }
+/* Home settings*/
 @media (min-width: 60rem) {
   .home-hero {
     height: 100vh;
@@ -66,7 +69,79 @@ nav a {
 .home-hero {
   background-image: url(https://images.unsplash.com/photo-1473116763249-2faaef81ccda?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1196&q=80);
   background-size: cover;
-  background-position: center;
+
+  background-repeat: no-repeat;
+  background-position: center center;
   padding: 14em 0;
   color: #000;
 }
+/*portfolio items*/
+
+/*port items*/
+.port-item-1{
+  margin: 0;
+  position: relative;
+  color: aquamarine;
+  width: 100vw;
+  position: absolute;
+  right:580px;
+}
+.port-item-2{
+  margin: 0;
+  position: relative;
+  color: aquamarine;
+  width: 100vw;
+  position: absolute;
+ left:580px;
+}
+.port-item-3{
+  margin: 0;
+  position: relative;
+  color: aquamarine;
+  width: 100vw;
+  position: absolute;
+ left:580px;
+}
+.port-item-4{
+  margin: 0;
+  position: relative;
+  color: aquamarine;
+  width: 100vw;
+  position: absolute;
+ left:580px;
+}
+.port-item img {
+  display: block;
+  color:rgb(0, 0, 0);
+  margin:auto;
+  max-width: 100%;
+}
+.port-desc {
+  position:absolute;
+  z-index: 100;
+  margin: auto;
+  max-width: 49%;
+  bottom: 0em;
+  left: 0em;
+  right: 0em;
+  color: black;
+  background: rgba(153, 142, 142, 0.6);
+  padding-bottom: 2em;
+ 
+}
+.port-desc p {
+  margin: .2em;
+
+}
+@media (min-width:37rem){
+  .port-item {
+    width: 50%;
+    float: right;
+  }
+  }
+  @media (min-width: 60rem) {
+    .port-item {
+      width: 33.3333334%;
+      overflow: hidden;
+    }
+  }
